@@ -1,1 +1,10 @@
+# The Impact of Release-based Validation on Software Vulnerability Prediction Models
+Master's Thesis
+Giulia Sellitto ([e-mail](g.sellitto21@studenti.unisa.it)) \
+University of Salerno, Italy \
+May 2021
+
+___
+
+Developing software is a challenging process. In each phase of the evolution of a software product, security vulnerabilities can be introduced, causing severe potential threats to the system and its users. It is critical to release software that has been checked to be secure, so techniques for vulnerability discovery and analysis have to be employed. One of the most promising seems to be vulnerability prediction based on Machine Learning, and several models have been proposed by the research community. As pointed out by Jimenez et al., most of those models performance have been evaluated using k-fold cross-validation, which shuffles the dataset to use for training and testing, and therefore is not realistic with respect to the real context in which such models are supposed to operate. In fact, in a real-case scenario, one would be interested in training the model using the information relative to vulnerabilities discovered in prior releases of the software and make predictions on the new code to be released. We seize this suggestion and start investigating how vulnerability prediction models would perform in a context which is more similar to the real one. We use the Walden et al.’s PHP vulnerability dataset and the two models based on software metrics and text tokens features, respectively. We make a comparison between the performance obtained by the two models when applying cross-validation and the performance observed when applying a release-based validation approach, which consists in using three prior releases of the application in the training phase and a single subsequent release in the testing phase. We find that the release-based validation approach, which is more similar to a real-world vulnerability prediction process, leads to lower performance. In particular, the precision of the model drops from around 0.9 to about 0.3, which is not reasonable.
 
