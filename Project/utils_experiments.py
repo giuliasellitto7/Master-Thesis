@@ -95,7 +95,7 @@ def generate_all_experiments_settings():
     all_experiments_list = []
     datasets = ["phpmyadmin"]
     approaches = ["metrics", "text"]
-    balancing = ["undersampling"]
+    balancing = ["none", "undersampling", "oversampling"]
     classifiers = ["random_forest"]
     # cross-validation
     for d in datasets:
